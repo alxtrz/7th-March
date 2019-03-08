@@ -90,12 +90,21 @@ div#A5.container-fluid
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.AboutUs
+{ text-align: center;
+  color: #ffffff;
+  width: 60%;
+  height: auto;
+  font-family: 'Raleway-thin';
+  position: absolute;
+  font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 .select
 { text-align: center;
   width: 95%;
   height: auto;
   position: absolute;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway-thin';
 }
 .cd-stretchy-nav {
     position: fixed;
