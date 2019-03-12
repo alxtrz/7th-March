@@ -103,16 +103,6 @@ div#A5.container-fluid
   background-position: center;
   background-size: cover;
 }
-
-#particles-js
-{   height: 100%;
-    width: 100%;
-    font-family: monospace;
-    background-image: linear-gradient(rgba(0,0,0,0.33),rgba(0,0,0,0.11)),url("../images/ukytf@4x.png");
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-}
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.5); }
 .hvr-grow {
