@@ -21,7 +21,8 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <link rel="stylesheet" href="css/jquery.pagepiling.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+    
     <script type="text/javascript">
 		var deleteLog = false;
 
@@ -55,6 +56,7 @@
             }
         });
         </script>
+
 </head>
 <body>
   
@@ -77,9 +79,13 @@
                     <span aria-hidden="true" class="stretchy-nav-bg"></span>
                 </nav>
         </header>
+        <section>
+            <div class="loader"></div>
+            <div class="count"></div>
+        </section>
         <div id="pagepiling">
-                        <div id="particles-js" class="section">
-                        
+                        <div class="section">
+                                <div id="particles-js">
                             
                                 <!--<div class="logo">
                                 <a href="#">
@@ -101,22 +107,23 @@
                                         </a>
                                     </div>
                                 </div>
+                                </div>
                         </div>
                         <div class="section">
                                 <div class="container-fluid" id="A2">
                                         <div data-aos="fade-up" data-aos-offset="500"
-                                        data-aos-duration="1000" class="select">
-                                            <h1 style="font-family:'montserrat';font-size: 8vmin; padding: 3vmin;">About Us</h1>
+                                        data-aos-duration="1000" class="yee">
+                                            <h1 style="font-family:'Raleway';font-size: 8vmin; padding: 3vmin;">About Us</h1>
                                             <div class="AboutUs" >
-                                            <p>"Sports teaches you to understand the meaning of a team. You need to be able to work with everybody; you don't have to be their best friend. You can experience the fun of competition and driving toward a common goal without pushing to bond in some major way with each individual on a project."</p>
+                                            <p style="font-family:'montserrat';">"Sports teaches you to understand the meaning of a team. You need to be able to work with everybody; you don't have to be their best friend. You can experience the fun of competition and driving toward a common goal without pushing to bond in some major way with each individual on a project."</p>
                                             <br>
-                                            <p>With this ambition of creating a platform where people can not only come to showcase their talent, but also can represent their team and connect with players and share everyone's common passion for sports, we started Aarambh.</p>
+                                            <p style="font-family:'montserrat';">With this ambition of creating a platform where people can not only come to showcase their talent, but also can represent their team and connect with players and share everyone's common passion for sports, we started Aarambh.</p>
                                             <br>
-                                            <p>AARAMBH is our college's immensely popular annual inter college sports fest, filled with energy, entertainment and fun. Every year, hundreds of college all around North India participate in various sports events held under our fest and be a part of this spectacular 3 day event. There's no better way to loosen up than to play together and to learn from your experiences, either success or failure.</p>
+                                            <p style="font-family:'montserrat';">AARAMBH is our college's immensely popular annual inter college sports fest, filled with energy, entertainment and fun. Every year, hundreds of college all around North India participate in various sports events held under our fest and be a part of this spectacular 3 day event. There's no better way to loosen up than to play together and to learn from your experiences, either success or failure.</p>
                                             <br>
-                                            <p>We has a footfall of over 3000 students. They participate in various games namely, basketball, cricket, badminton, table tennis, chess and carrom.</p>
+                                            <p style="font-family:'montserrat';">We has a footfall of over 3000 students. They participate in various games namely, basketball, cricket, badminton, table tennis, chess and carrom.</p>
                                             <br>
-                                            <p>Come join us and have an amazing time with remarkable chief guests, cooperative team, and quality officials.</p>
+                                            <p style="font-family:'montserrat';">Come join us and have an amazing time with remarkable chief guests, cooperative team, and quality officials.</p>
                                             </div>
                                         </div>
                                 </div>
@@ -125,8 +132,8 @@
                             <div class="container-fluid" id="A1">
                                 <div data-aos="fade-up" data-aos-offset="500"
                                 data-aos-duration="1000" class="select">
-                                    <h1 style="font-size: 8vmin; padding: 3vmin;">Register</h1>
-                                    <h3 style="font-size: 6vmin; padding: 3vmin;">Select Sport :-</h3>
+                                    <h1 style="font-family:'Raleway';font-size: 8vmin; padding: 3vmin;">Register</h1>
+                                    <h3 style="font-family:'Raleway';font-size: 6vmin; padding: 3vmin;">Select Sport :-</h3>
                                     <a href="https://goo.gl/forms/xbKFb2xubOVDTJYw2" class="hvr-float">
                                     <img src="images/cricket.png" style="height: 32vmin; padding: 0.5vmin;margin: 1vmin;border: 1px solid #fff;">
                                     </a>
@@ -152,7 +159,7 @@
                             <div class="container-fluid" id="A3">
                                     <div data-aos="fade-up" data-aos-offset="500"
                                     data-aos-duration="1000" class="select">
-                                        <h1 style="font-size: 8vmin; padding: 3vmin;">Team</h1>
+                                        <h1 style="font-family:'Raleway';font-size: 8vmin; padding: 3vmin;">Team</h1>
                                     </div>
                                 </div>
                         </div>
@@ -160,7 +167,7 @@
                             <div class="container-fluid" id="A5">
                                     <div data-aos="fade-up" data-aos-offset="500"
                                     data-aos-duration="1000" class="select">
-                                        <h1 style="font-size: 8vmin; padding: 3vmin;">Contact Us</h1>
+                                        <h1 style="font-family:'Raleway';font-size: 8vmin; padding: 3vmin;">Contact Us</h1>
                                     </div>
 
                             </div>
@@ -201,5 +208,24 @@
     <script  src="js/index.js"></script>
     <script src="jquery.pagepiling.min.js"></script>
     <script src="please.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var count = 0;
+            var counter = setInterval(function(){
+                if(count<101)
+                {
+                    .$('.count').text(count + '%');
+                    .$('.loader').css('width', count + '%');
+                    
+                    count++
+                }
+                else{
+                    clearInterval(counter)
+                }
+
+            },80)
+        })
+    
+    </script>
 </body>
 </html>
