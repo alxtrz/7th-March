@@ -96,6 +96,10 @@ div#A3.container-fluid
   background-repeat: no-repeat;
   opacity: 0.5;
 }
+.check{
+  width: auto;
+  height: auto;
+}
 div#A5.container-fluid
 { text-align: center;
   color: #ffffff;
