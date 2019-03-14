@@ -1,0 +1,1 @@
+jQuery("#responsive_headline").fitText(1.2)

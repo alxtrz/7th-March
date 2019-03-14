@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 html
 { /*
   scroll-behavior: smooth;
@@ -76,29 +78,47 @@ div#A1.container-fluid
 div#A2.container-fluid
 { text-align: left;
   color: #ffffff;
-  background: url("../images/228.png");
+  background: url("../images/as.jpg");
   background-position: center;
   background-size: cover;
   }
 div#A3.container-fluid
 { text-align: center;
   color: #ffffff;
-  background-image: url("../images/Team@4x.jpg");
+  background-image: url("../images/Team@4x.jpg.png");
   background-position: center;
   background-size: cover;
 }
 .yee{
-  height: 100%;
+  height: 85%;
   width: 100%;
   background-image: url("../images/hand@4x.png");
-  background-position: right bottom;
+  background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 1;
+}
+.row1{
+  text-align: center;
+  height: 35vh;
+  width: 100%;
+}
+.Rules{
+  margin-top: 2.5vh;
+  height: auto;
+}
+.butt{
+  color:white; 
+  background-color: Transparent;
+  outline:none;
+  border:solid white 1px;
+  padding:1vmin;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  font-family: 'Raleway';
 }
 .check{
-  width: auto;
-  height: auto;
+  
 }
 div#A5.container-fluid
 { text-align: center;
@@ -130,27 +150,50 @@ div#A5.container-fluid
 { text-align: center;
   color: #ffffff;
   width: auto;
-  font-family: 'Raleway';
+  font-family: 'Raleway';font-weight: 600;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 .AboutUs
-{ text-align: left;
-  color: #ffffff;
-  width: 50vw;
+{ text-align: center;
+  color:white;
+  width: 60vw;
   height: auto;
-  font-family: 'Raleway-thin';
+  font-family: 'Raleway';font-weight:400;
   position: absolute;
-  font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 2.5vh;
+  overflow: hidden;
+}
+@media screen and (max-width:800px){
+  .AboutUs{
+    width: 100%; 
+    font-size: 2.1vh;
+  }
+  .row1{
+    height: 21vh;
+    text-align: justify;
+    vertical-align: center;
+    margin-bottom: 2vh;
+  }
+  .butt{
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 12vw;
+    margin-bottom: 2vh;
+  }
 }
 .select
-{ text-align: center;
-  width: 95%;
-  height: auto;
+{ margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: -webkit-baseline-middle;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  font-family: 'Raleway-thin';
+  font-family: 'Raleway';font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
 .cd-stretchy-nav {
     position: fixed;
@@ -1109,4 +1152,112 @@ svg {
   height: 100%;
   padding: 25px;
   box-sizing: border-box
+}
+.p1 {
+  background: url("https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg") center;
+}
+
+.p2 {
+  background: url("https://static.pexels.com/photos/428339/pexels-photo-428339.jpeg") center;
+}
+
+.p3 {
+  background: url("https://static.pexels.com/photos/220453/pexels-photo-220453.jpeg") center;
+}
+
+.p4 {
+  background: url("https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg") center;
+}
+
+.p5 {
+  background: url("https://static.pexels.com/photos/354951/pexels-photo-354951.jpeg") center;
+}
+
+.p6 {
+  background: url("https://static.pexels.com/photos/193355/pexels-photo-193355.jpeg") center;
+}
+
+.cube {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.cube .name {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  text-shadow: 0 1px 3px #000;
+  z-index: 3;
+}
+.cube .name h1 {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.cube .name p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.cube .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+.cube .content ul {
+  padding: 0;
+  margin: 0 0 55px 0;
+  cursor: default;
+  text-align: center;
+}
+.cube .content ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 11.05px 10px 11.05px;
+  top: 40px;
+  position: relative;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.cube .content ul li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.cube .content ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.cubewrap{
+  width: 100%;
+  display: block;
 }
