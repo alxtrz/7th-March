@@ -23,6 +23,6 @@
     "load-grunt-tasks": "~3.3.0"
   },
   "dependencies": {
-    "netlify-cli": "^2.8.1"
+    "netlify-cli": "^14.3.1"
   }
 }
